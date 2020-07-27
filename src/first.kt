@@ -84,7 +84,46 @@ fun main(){
     map1.put(6,"Renne")
 
     print("\nMap after adding 2 new elements\n")
-    map1.forEach { key, value -> println("$key -> $value") }
+    map1.forEach { key, value -> println("$key -> $value")
+    }
+
+// using collections with functions
+//we can pass the collection to a function as a parameter
+// you can use list for list and mutable list as done below
+// same goes of map
 
 
- }
+
+    fun col(greeting: String,itemsToGreet: List<String>)
+    {
+    itemsToGreet.forEach { itemsToGreet ->
+        println("$greeting $itemsToGreet")
+    }
+    }
+
+    col("Hello",li)
+
+/*Sometimes we don't want to use one parameter of a function.
+* for example in the function col which is defined above we don't want to pass the list.
+* for that there are 2 different ways
+* 1st is you can pass a empty list
+* like col("Hi",listof())
+* but this is not a good way of handling it
+*
+* 2nd is that you can modify the function arguments so that they can be optional
+* for that you can use vararg keyword while defining the function. AS SHOWN BELOW
+* But vararg will convert the argument in an array of the specified type of arguments
+* for example string is used as a data type in the second parameter of the below created function
+* so now you will it will be changed to array of string type after adding vararg to the parameter */
+
+    fun new_func(greeting: String, vararg ItemsTOGreet: String){
+    ItemsTOGreet.forEach { ItemsTOGreet ->
+        println("$greeting $ItemsTOGreet")
+    }
+    }
+/*Now when we will call function new_func
+* we don't need to pass the list in the second parameter AS SHOWN BELOW*/
+    new_func("Hi","" )
+
+
+}
