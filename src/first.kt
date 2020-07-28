@@ -103,7 +103,18 @@ fun main(){
 
     col("Hello",li)
 
-/*Sometimes we don't want to use one parameter of a function.
+
+
+
+/*
+I FOUND 2 DIFFERENT WAYS OF USING VARARG PARAMETERS IN A FUNCTION.
+SO I AM CONFUSED RIGHT NOW
+BUT I WROTE DOWN THE BOTH WAYS.
+I THINKS 2ND ONE MAKES MORE SENSE.
+
+
+THIS IS FIRST EXPLANATION
+Sometimes we don't want to use one parameter of a function.
 * for example in the function col which is defined above we don't want to pass the list.
 * for that there are 2 different ways
 * 1st is you can pass a empty list
@@ -114,7 +125,25 @@ fun main(){
 * for that you can use vararg keyword while defining the function. AS SHOWN BELOW
 * But vararg will convert the argument in an array of the specified type of arguments
 * for example string is used as a data type in the second parameter of the below created function
-* so now you will it will be changed to array of string type after adding vararg to the parameter */
+* so now it will be changed to array of string type after adding vararg to the parameter */
+
+/*
+THIS IS 2ND EXPLANATION
+Sometimes we need a function where we can pass n number of parameters, and the value of n can be decided at runtime.
+Kotlin provides us to achieve the same by defining a parameter of a function as vararg.
+We can pass n number of parameters to a vararg variable of the defined datatype or even of a generic type.
+
+----->For Example<------
+We need a function which takes n number as inputs and returns the average of all the inputs.
+If the size of n variables is not fixed, we usually convert it into an array or list and pass it to function.
+
+So now to handle this without converting into array or list
+We can use VARAGR parameters
+We can pass n number of inputs to the same function and can get the result back.
+Inside the function, the parameter is available as an Array object and
+we can perform all normal array operations on it.
+
+*/
 
     fun new_func(greeting: String, vararg ItemsTOGreet: String){
     ItemsTOGreet.forEach { ItemsTOGreet ->
@@ -123,7 +152,7 @@ fun main(){
     }
 /*Now when we will call function new_func
 * we don't need to pass the list in the second parameter AS SHOWN BELOW*/
-    new_func("Hi","" )
+    new_func("Hi")
 
 
 }
