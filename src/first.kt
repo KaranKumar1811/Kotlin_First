@@ -151,10 +151,10 @@ we can perform all normal array operations on it.
     }
     }
 /*Now when we will call function new_func
-* we don't need to pass the list in the second parameter AS SHOWN BELOW*/
-    new_func("Hi")
+* we can pass the multiple values in the second parameter AS SHOWN BELOW*/
+    new_func("Hi","Karan","Paras","Ankita","Sandeep")
 
 
-    
+
 
 }
