@@ -174,5 +174,5 @@ we can perform all normal array operations on it.
     val dataArray = arrayOf("Kotlin","java","C++")
      new_func("New",*dataArray)
 
-
+//Please see the SECOND KOTLIN file for learning more kotlin
 }
