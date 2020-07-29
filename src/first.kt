@@ -154,9 +154,25 @@ we can perform all normal array operations on it.
 * we can pass the multiple values in the second parameter AS SHOWN BELOW*/
     new_func("Hi","Karan","Paras","Ankita","Sandeep")
 
+/*
+* So now in real world case we will get the array values from a network or Database
+* but your can't simply pass the array of data in the parameter.
+*
+* EXAMPLE is given below you can uncomment to see the error it gives when you pass array in 2nd argument
+*  */
 
+ //   val dataArray = arrayOf("Kotlin","java","C++")
+ //    new_func("Hi",dataArray)
 
+    /*
+    * TO SOLVE THE ABOVE GIVEN ISSUE
+    * you need to use SPREAD OPERATOR(*)
+    * you have to put * in front of the array name
+    * AS SHOWN BELOW
+    * */
 
+    val dataArray = arrayOf("Kotlin","java","C++")
+     new_func("New",*dataArray)
 
 
 }
