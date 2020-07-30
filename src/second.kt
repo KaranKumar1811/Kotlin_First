@@ -88,9 +88,37 @@ NAMED ARGUMENTS ARE USED AS SHOWN IN THE BELOW EXAMPLE
   * greet(firstArg = "Hello","Love")
   * THIS WILL GIVE THE ERROR
   *
-  * greet(firstArg = "Hello",secondArg = "Love")
+  * greet(firstAr g = "Hello",secondArg = "Love")
   * So you have to write it like this
-  *
-  *
   * */
+
+  /*
+  Please GOTO Person.kt File from here.
+
+  If you uncomment LINE 98 it will give an error because we have created a constructor in Class Person
+  with parameters
+  and we haven't passed the values to the parameters in this object creation
+* val person = Person()
+
+  So now we will create the correct objects by passing values to the constructor
+  AS SHOWN BELOW
+  * */
+  val person = Person(_firstName = "Ritik",_lastName =  "Gera")
+
+  /*Please GOTO Person.kt LINE 25*/
+
+  // Now we can access the properties of Person class using its Object as shown below
+  println(person.FirstName)
+  println(person.LastName)
+  /*OUTPUT
+  Ritik
+  Gera
+  * */
+
+  /*Please GOTO Person.kt LINE 63*/
+
+  //val p1=Person()
+
+
+
 }
