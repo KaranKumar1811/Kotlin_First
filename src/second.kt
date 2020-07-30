@@ -12,20 +12,20 @@ greetPerson("Good morning","Karan")
 * So you won't be able to tell in what order the arguments should be passed in.
 * which means you can mistakenly pass the name first rather than greeting
 *
-*                ------------> Definition of CODE REVIEW <---------------
+*             ----------------> Definition of CODE REVIEW <---------------
 * Code review is a software quality assurance activity in which one or several people check a program
 * mainly by viewing and reading parts of its source code,
 * and they do so after implementation or as an interruption of implementation.
 * At least one of the persons must not be the code's author.
 * https://en.wikipedia.org/wiki/Code_review for further details
 *
-* OR IF You want to change the FUNCTION SIGNATURE in future
+* OR If You want to change the FUNCTION SIGNATURE in future
 * you need to know the exact order of the parameters
 * because these parameters are of same type
 * you will not get Any compiler error.
 *
 *
-*                ------------> Definition of FUNCTION SIGNATURE <---------------
+*            ---------------> Definition of FUNCTION SIGNATURE <---------------
 * A function signature is the parts of the function declaration
 * that the compiler uses to perform overload resolution.
 * Since multiple functions might have the same name (ie., they're overloaded),
@@ -118,7 +118,5 @@ NAMED ARGUMENTS ARE USED AS SHOWN IN THE BELOW EXAMPLE
   /*Please GOTO Person.kt LINE 63*/
 
   //val p1=Person()
-
-
 
 }
