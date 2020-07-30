@@ -80,4 +80,17 @@ NAMED ARGUMENTS ARE USED AS SHOWN IN THE BELOW EXAMPLE
     greet()
     // OUTPUT of This is
     //Hello Karan
+
+  /*There is a limitation of Named Arguments
+  * If you use one named argument then it is mandatory to use named argument in the other argument
+  * EXAMPLE
+  *
+  * greet(firstArg = "Hello","Love")
+  * THIS WILL GIVE THE ERROR
+  *
+  * greet(firstArg = "Hello",secondArg = "Love")
+  * So you have to write it like this
+  *
+  *
+  * */
 }
