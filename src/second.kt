@@ -117,6 +117,6 @@ NAMED ARGUMENTS ARE USED AS SHOWN IN THE BELOW EXAMPLE
 
   /*Please GOTO Person.kt LINE 63*/
 
-  //val p1=Person()
+  val p1=Person()
 
 }

@@ -1,5 +1,6 @@
 
-
+// var is the use for not having a constant values
+// val is use to declare a constant
 var name = "Karan"
 fun Lastname(item: String) = println(item)
 
@@ -11,7 +12,7 @@ fun main(){
 //creating an array
     val arr = arrayOf("Kotlin","Java","Php","python")
 
-// printing size and values of array using different inbuilt fuctions
+// printing size and values of array using different inbuilt functions
 //    println(arr.size)
 //    println(arr[0])
 //    println(arr.get(1))

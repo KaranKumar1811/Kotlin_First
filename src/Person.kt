@@ -64,10 +64,40 @@ class Person(_firstName : String, _lastName: String)
  * but in many cases you will need more than one constructors in class
  * so those constructors are called as Secondary Constructors
  * Now we will create an empty constructor
+ * But for the secondary constructor to work you have to call the primary constructor
+ * You cannot do this
+ * constructor()
+ * {
+ * println("SECONDARY Constructor Is called")
+ * }
+ * you need to call the primary constructor using this keyword which refers to this class
+ * As Shown in Line 78
+ *
   * */
 
-    constructor(){
+    constructor(): this("Roma","Gill"){
         println("SECONDARY Constructor Is called")
     }
+    /*Now when you will call the secondary constructor
+    * as shown in Second.kt file Line No 120
+    * the output will be
+    * SECONDARY Constructor Is called
+    * */
+
+
+    /*Now we will use init block to see how it works*/
+
+    init {
+        println("Init is called")
+    }
+    /*When ever you make a object of this class the first thing to execute is the init block
+    * regardless of where init is placed in the class
+    * when we run second.kt file the output of the line 120 Will be
+    *
+    * Init is called
+    * SECONDARY Constructor Is called
+    * */
+
+    
 }
 
